@@ -1,0 +1,709 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    caret-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#003300;
+}
+.Overlay{
+    display:none;
+}
+
+header {
+    height: 100px;
+    background-color: #003300;
+    color: white;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+
+.HeaderLogo {
+    width: 100%;
+}
+
+.HeaderLogoBox a:hover {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.HeaderLogoBox {
+    width: 25%;
+}
+
+.HeaderLogoBox a {
+    width: 180px;
+    margin: 5px auto;
+    display: block;
+    transition: 0.2s margin, 0.2s width;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 3vw;
+    margin-top: 38px;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .6s color;
+}
+
+header nav ul li a:hover {
+    color: #009900;
+}
+
+.MenuButton {
+    display: none;
+}
+
+
+.Flexbox {
+    display: flex;
+}
+
+.HeroImage {
+    width: 100%;
+    height: 70vh;
+    padding-top: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("img/temp.jpg");
+    background-size: cover;
+}
+
+.HeroText {
+    margin-left: 5%;
+    color: white;
+}
+
+.HeroText h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+    color:white;
+}
+
+.HeroText p {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.HeroText a {
+    width: 200px;
+    display: block;
+    text-decoration: none;
+}
+.HeroButton {
+    width: 100%;
+    height: 85px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color .5s;
+}
+
+.HeroButton h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 85px;
+    color:white;
+
+    transition:color .5s;
+}
+
+.News {
+    display: block;
+    width: 230px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.News h3 {
+    color: white;
+}
+
+.NewsImage {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    max-height:150px;
+}
+
+.News h2{
+    color:white;
+}
+
+.HeroImage .HeroButton:hover {
+    background-color: white;
+}
+.HeroImage .HeroButton:hover h2 {
+    color: #003300;
+}
+
+
+
+main {
+    padding: 40px 0 100px;
+    width: 769px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Info {
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+.Info {
+    display: flex;
+    
+    padding: 20px;
+    height:400px;
+}
+
+.Info article {
+    flex: 1;
+    text-align: center;
+}
+
+.Info article h2 {
+    color: #003300;
+}
+
+
+.Info article ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Info article ul li {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.Info .ProfilePic {
+    flex: 1;
+    border-left: 2px solid #003300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.Info .ProfilePic img {
+    height:100%;
+    display: block;
+    margin: auto;
+
+
+}
+
+.ContactInfo h1 {
+    color: #003300;
+}
+
+.ContactInfo h2 {
+    color: #003300;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ContactInfo h2 .ColorRed {
+    color: red;
+}
+
+.ContactInfo form {
+
+    display: block;
+    caret-color: black;
+}
+
+.ContactInfo form .Text {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #003300;
+}
+
+.ContactInfo form select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #003300;
+}
+
+.ContactInfo form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    font-size: 16px;
+    border: 1px solid #003300;
+}
+
+.ContactInfo form .Submit {
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #003300;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ContactInfo ul {
+    padding: 30px 20px;
+}
+
+.ContactInfo ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.ContactInfo .FormSide {
+    flex: 1;
+}
+
+
+.HeroImagePage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("img/temp.jpg");
+    height: 30vh;
+    padding-top: 30vh;
+    width: 100%;
+}
+
+.HeroImagePage h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+#ResultsMain {
+    width: 100%;
+    padding: 0;
+}
+
+.Results .ResultsButtonpanel {
+    display: flex;
+}
+
+.Results .ResultsButtonpanel .ResultsButton {
+    flex: 1;
+    background-color: #003300;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ResultsContent .ResultBoard {
+    width: 90%;
+    padding: 0 5% 100px;
+}
+
+.ResultBoardGreen {
+    background-color: #cfffcf
+}
+
+.ResultBoard h1 {
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.ResultsPanel {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.ResultsStat {
+    flex: 1;
+    text-align: center;
+}
+
+.ResultsStat h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.ResultsStat .ResultsTitle {
+    background-color: #003300;
+    color: white;
+}
+
+.TopRowSliderStats {
+    display: flex;
+}
+
+.SlideStat {
+    text-align: center;
+    flex: 1;
+}
+
+.StatBox {
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #009900;
+}
+
+.StatValue {
+    background-color: #003300;
+    color: white;
+    width: 0%;
+    height: 100%;
+    transition: 0.8s ease-out;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    overflow-x: hidden;
+}
+.NumberStatsSection {
+    padding-bottom: 50px;
+    margin-top:30px;
+}
+
+.NumberStatRow {
+    display: flex;
+    margin-top: 50px;
+}
+
+.NumberStat {
+    flex: 1;
+    text-align: center;
+}
+
+.NumberStat h2 {
+    height: 60px;
+    background-color: #003300;
+    color: white;
+    line-height: 60px;
+    display: block;
+}
+
+iframe {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 4 / 3;
+}
+
+hr {
+    background-color: #003300;
+    height: 1px;
+    margin: 50px 0;
+}
+.AboutContent {
+    display: flex;
+    width: 100%;
+}
+
+.AboutPictures {
+    flex: 3;
+}
+
+.AboutPic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.AboutPic img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.Information {
+    padding-right: 20px;
+    flex: 4;
+}
+
+.WITB {
+    width: 100%;
+    margin:60px 0;
+    text-align: center;
+}
+
+.WITBTitle {
+    border: 1px solid white;
+    height: 75px;
+    color: white;
+    background-color: #003300;
+    line-height: 75px;
+    font-size: 30px;
+    padding: 0 70px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.WITBMenuIcon {
+    float: right;
+    width: 55px;
+    margin: 10px 0;
+}
+
+.WITBContent {
+    border-left: 1px solid #003300;
+    border-right: 1px solid #003300;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s height;
+    display: flex;
+    border-bottom: 1px solid #003300;
+}
+
+.WITBClub {
+    flex: 1;
+    text-align: center;
+}
+
+.WITBClubPicture {
+    width: 130px;
+    margin-top: 10px;
+}
+.NewsContent {
+    width: 100%;
+    border: 1px solid #003300;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewsDescription {
+    width: 50%;
+}
+
+.NewsContent img {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+}
+.PDFButton {
+    display: block;
+    border: 1px solid #003300;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px black;
+    width: 200px;
+    margin: 20px 0;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.PDFButton:hover {
+    box-shadow: none;
+}
+.Grades {
+}
+
+.Class {
+    border: 1px solid #003300;
+    display: flex;
+}
+
+.ClassName {
+    flex: 3;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.ClassGrade {
+    flex: 1;
+    line-height: 40px;
+    border-left: 1px solid #003300;
+    padding-left: 20px;
+}
+.Schedule {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Schedule a {
+    text-decoration: none;
+    color: black;
+}
+
+.Tournament {
+    border: 1px solid #003300;
+    margin: 20px;
+    font-size: 14px;
+}
+.Tournament h2{
+    font-size:14px;
+}
+.Tournament p {
+    margin-top: 30px;
+}
+.TournamentPicture {
+    width: 100%;
+}
+
+.TournamentPicture img {
+    width: 100%;
+    height: 200px;
+}
+
+.TournamentInfo {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+footer {
+    color: white;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #003300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .FooterContent {
+    width: 768px;
+    margin: auto;
+    display: flex;
+}
+
+.FooterLogo {
+    width: 100%;
+}
+
+footer .LogoBox {
+    flex: 1;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+footer .LogoBox #FooterLogo {
+    width: 180px;
+    margin: 5px auto;
+    display: block;
+    transition: 0.2s margin, 0.2s width;
+}
+
+footer .LogoBox #FooterLogo:hover {
+    width: 200px;
+    margin: 0px auto;
+}
+
+footer .ListBox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .ListBox ul li {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+footer .ListBox ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+footer .ListBox ul li a:hover {
+    color: #009900;
+}
+
+footer .ListBox {
+    flex: 1;
+    padding: 0 20px;
+}
+
+footer #FooterLeft {
+    text-align: right;
+}
+
+footer #FooterRight {
+    text-align: left;
+}
+
+footer .FooterSocialMedia {
+    width: 150px;
+    margin: auto;
+    display: flex;
+}
+
+footer .FooterSocialMedia a {
+    height: 50px;
+    margin: 18px auto;
+}
+
+#InstagramLogo {
+    width: 50px;
+    display: block;
+}
+
+#InstagramLogo:hover {
+    content: url("img/instagramgreen.png");
+}
+
+#DiagonalLine {
+    width: 30px;
+    margin: 0 10px;
+    display: block;
+}
+
+#FacebookLogo {
+    width: 50px;
+    display: block;
+}
+
+#FacebookLogo:hover {
+    content: url("img/facebookgreen.png");
+}
+
+.FooterCopyRight {
+    text-align: center;
+    margin-top: 30px;
+}

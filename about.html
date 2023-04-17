@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Filip Widepalm</title>
+
+
+    <link rel="stylesheet" media="(min-width:1280px)" href="stor.css" />
+    <link rel="stylesheet" media="(min-width:769px) and (max-width:1279px)" href="mellan.css" />
+    <link rel="stylesheet" media="(max-width:768px)" href="liten.css" />
+
+
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="AlignPicturesVertical()" >
+
+    <nav class="Overlay" id="PhoneNav">
+
+        <a href="javascript:void(0)" class="CloseBtn" onclick="CloseNav()">&times;</a>
+
+        <div class="OverlayContent">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="video.html">Video</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="results.html">Results</a>
+            <a href="statistics.html">Statistics</a>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="HeaderLogoBox">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" class="HeaderLogo" />
+            </a>
+        </div>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+            </ul>
+        </nav>
+
+        <div class="MenuButton" onclick="OpenNav()"></div>
+
+    </header>
+
+    <div class="HeroImagePage">
+        <h1>About</h1>
+    </div>
+
+    <main>
+        <h1>About me</h1>
+
+        <p><b>On this page you will find information about me and my intentions</b></p>
+
+        <p><b>Further down, there is also information about my academics and SAT score.</b></p>
+
+        <hr />
+
+        <div class="AboutContent">
+            <article class="Information">
+                <h2>Information</h2>
+
+                <h3>Who are you?</h3>
+                <p>
+                    My name is Filip Widepalm, I am 18 years of age and I live just outside of Gothenburg, Sweden. I currently attend Hulebäcksgymnasiet, an upper secondary school in my hometown and I would love to attend college in the future.
+                </p>
+
+                <h3>Why do you play golf?</h3>
+                <p>
+                    I have been playing golf ever since I was nine years old when my dad got me into the game. I started taking lessons and fell in love with the game very fast; since then, I have been competing for several years and golf has now grown into a very big part of my life.
+                </p>
+
+                <h3>Why do you want to go to college?</h3>
+                <p>
+                    I would love to go to college since I think it would be a very good opportunity for me to grow both as a golfer and as a person. It would also be a very good way to combine my desire to get an education with the pursuit of a career in the game of golf.
+                </p>
+
+                <h3>What are your strengths as a golfer?</h3>
+                <p>
+                    I would say that my biggest strength is that I know my game very well. I know what risks I can and can not take on the golf course. Even if I have a bad day, I will still make the best of it and find a way to get through the round and put a respectable score together. I would also say that the shortgame is a strength of mine.
+                </p>
+
+                <a href="infopdf.html" class="PDFButton">PDF</a>
+
+            </article>
+
+            <div class="AboutPictures" id="AcademicsPictureBox">
+                <div class="AboutPic">
+                    <img src="img/filip1.jpg" alt="Gullbringa" />
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="WITB">
+
+            <h1>What's in my bag?</h1>
+
+            <div class="WITBTitle" onclick="ToggleContent('Driver')">
+                Driver
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="DriverMenuIcon" />
+            </div>
+            <div class="WITBContent" id="DriverContent">
+
+
+                <div class="WITBClub">
+                    <img src="img/driver.jpg" alt="Driver" class="WITBClubPicture" />
+                    <h3>Titleist Ts2 Driver, 10.75°</h3>
+
+
+                </div>
+
+                <div class="WITBClub">
+                    <img src="img/smoke.jpg" alt="Driver" class="WITBClubPicture" />
+                    <h3>Project X HZRDUS smoke 60g</h3>
+
+
+                </div>
+            </div>
+
+            <div class="WITBTitle" onclick="ToggleContent('3Wood')">
+                3-Wood
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="3WoodMenuIcon" />
+            </div>
+            <div class="WITBContent" id="3WoodContent">
+
+                <div class="WITBClub">
+                    <img src="img/3wood.jpg" alt="3wood" class="WITBClubPicture" />
+                    <h3>Titleist Ts2 3-Wood, 15°</h3>
+
+
+                </div>
+
+                <div class="WITBClub">
+                    <img src="img/tenseiblue.jpg" alt="Shaft" class="WITBClubPicture" />
+                    <h3>Tensei Blue 65 Stiff</h3>
+
+
+                </div>
+
+            </div>
+
+            <div class="WITBTitle" onclick="ToggleContent('7Wood')">
+                7-Wood
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="7WoodMenuIcon" />
+            </div>
+            <div class="WITBContent" id="7WoodContent">
+                <div class="WITBClub">
+                    <img src="img/3wood.jpg" alt="7Wood" class="WITBClubPicture" />
+                    <h3>Titleist Ts2 7-Wood, 21°</h3>
+
+
+                </div>
+
+                <div class="WITBClub">
+                    <img src="img/tenseiblue.jpg" alt="Shaft" class="WITBClubPicture" />
+                    <h3>Tensei Blue 65 Stiff</h3>
+
+
+                </div>
+            </div>
+
+            <div class="WITBTitle" onclick="ToggleContent('Irons')">
+                Irons
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="IronsMenuIcon" />
+            </div>
+            <div class="WITBContent" id="IronsContent">
+                <div class="WITBClub">
+                    <img src="img/irons.jpg" alt="irons" class="WITBClubPicture" />
+                    <h3>Ping i210 4-PW</h3>
+
+
+                </div>
+
+                <div class="WITBClub">
+                    <img src="img/nippon.jpg" alt="Shaft" class="WITBClubPicture" />
+                    <h3>Nippon Modus Pro S105</h3>
+
+
+                </div>
+            </div>
+
+            <div class="WITBTitle" onclick="ToggleContent('Wedges')">
+                Wedges
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="WedgesMenuIcon" />
+            </div>
+            <div class="WITBContent" id="WedgesContent">
+                <div class="WITBClub">
+                    <img src="img/wedge.jpg" alt="wedge" class="WITBClubPicture" />
+                    <h3>Titleist sm8 - 58° / 54° / 50°</h3>
+
+
+                </div>
+
+                <div class="WITBClub">
+                    <img src="img/wedgeshaft.jpg" alt="Shaft" class="WITBClubPicture" />
+                    <h3>True Temper Wedge Flex</h3>
+
+
+                </div>
+            </div>
+
+            <div class="WITBTitle" onclick="ToggleContent('Putter')">
+                Putter
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="PutterMenuIcon" />
+            </div>
+            <div class="WITBContent" id="PutterContent">
+                <div class="WITBClub">
+                    <img src="img/putter.jpg" alt="putter" class="WITBClubPicture" />
+                    <h3>Odyssey O'Works 7</h3>
+
+
+                </div>
+            </div>
+
+            <div class="WITBTitle" onclick="ToggleContent('Golfball')">
+                Golfball
+
+                <img src="img/WITBMenuIcon.png" class="WITBMenuIcon" alt="MenuButton" id="GolfballMenuIcon" />
+            </div>
+            <div class="WITBContent" id="GolfballContent">
+                <div class="WITBClub">
+                    <img src="img/ball.jpg" alt="ball" class="WITBClubPicture" />
+                    <h3>Titleist ProV1 2021</h3>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="AboutContent">
+            <article class="Information">
+                <h2>Academics</h2>
+
+                <h3>Grades</h3>
+
+                <h4>First year of Upper Secondary School (Currently attending)</h4>
+
+                <div class="Grades">
+                    <div class="Class">
+                        <div class="ClassName">
+                            Mathematics 1c
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Mathematics 2c
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            English 5
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            History 1a1
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Spanish 3
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Social Studies 1b
+                        </div>
+                        <div class="ClassGrade">
+                            B
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Swedish 1
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Technology 1
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Compulsory School</h4>
+
+                <div class="Grades">
+                    <div class="Class">
+                        <div class="ClassName">
+                            Art
+                        </div>
+                        <div class="ClassGrade">
+                            B
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Biology
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            English
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Physics
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Geography
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Home and consumer studies
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            History
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Physical Education and Health
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Chemistry
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Mathematics
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Spanish
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Music
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Religion
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Social Studies
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Crafts
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Swedish
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="Class">
+                        <div class="ClassName">
+                            Technology
+                        </div>
+                        <div class="ClassGrade">
+                            A
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <a href="gradepdf.html" class="PDFButton">Official Document</a>
+
+                <h3>SAT score</h3>
+
+                1310
+
+
+            </article>
+
+            <div class="AboutPictures">
+                <div class="AboutPic">
+                    <img src="img/grades.jpg" alt="Gullbringa" />
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="FooterContent">
+            <div class="ListBox" id="FooterLeft">
+                <ul>
+                    <li><a href="mailto:filip@widepalm.se">filip@widepalm.se</a></li>
+                    <li>+46 727146943</li>
+                    <li>Naeckrosveagen 101, 435 40, Molnlycke</li>
+                    <li><a href="#top">Top</a></li>
+                </ul>
+            </div>
+            <div class="LogoBox">
+                <a href="index.html" id="FooterLogo">
+                    <img src="img/logo.png" alt="Logo" class="FooterLogo" />
+                </a>
+
+                <div class="FooterSocialMedia">
+                    <a href="https://www.instagram.com/filip_widepalm/" target="new"><img src="img/instagramwhite.png" alt="Instagram Logo" id="InstagramLogo"/></a>
+
+                    <div><img src="img/diagonalline.png" alt="Diagonal Line" id="DiagonalLine" /></div>
+
+                    <a href="#"><img src="img/facebookwhite.png" alt="Facebook Logo" id="FacebookLogo" /></a>
+                </div>
+            </div>
+
+
+            <div class="ListBox" id="FooterRight">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="results.html">Results</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="FooterCopyRight">
+            Copyright 2022 © All rights reserved
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    height: 100px;
+    background-color: #003300;
+    color: white;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    position:fixed;
+    z-index: 2;
+}
+.HeaderLogo{
+    width:100%;
+}
+.HeaderLogoBox a:hover{
+    width: 200px;
+    margin:0 auto;
+}
+.HeaderLogoBox{
+    width: 25%;
+}
+.HeaderLogoBox a {
+    width: 180px;
+    margin: 5px auto;
+    display: block;
+    transition: 0.2s margin, 0.2s width;
+}
+
+header nav{
+    margin-left:auto;
+    margin-right:auto;
+}
+header nav ul {
+    margin:0;
+    padding:0;
+}
+header nav ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 3vw;
+    margin-top: 38px;
+
+}
+
+header nav ul li a {
+    font-size:0.9vw;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:.6s color;
+
+}
+header nav ul li a:hover{
+    color:#009900;
+}
+
+.HeroImage {
+    width: 100%;
+    height: 70vh;
+    padding-top:30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("temp.jpg");
+    background-size: cover;
+}
+.HeroText {
+    margin-left: 5%;
+    color: white;
+}
+.HeroText h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 5vw; 
+    margin:0;
+ 
+}
+.HeroText p {
+    font-weight: 600;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.HeroButton {
+    width: 200px;
+    height: 85px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color .5s, background-color .5s;
+}
+.HeroButton h2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    line-height:85px;
+}
+.HeroImage #ButtonLink{
+    text-decoration:none;
+}
+.HeroImage .HeroButton:hover{
+    background-color: white;
+    color:#003300;
+}
+.HeroImage .BottomLink{
+    position:absolute;
+    bottom: 0;
+    height:50px;
+    width:100%;
+    color:white;
+    text-align:center;
+}
+.HeroImage .BottomLink h3{
+    margin:0;
+}
+
+
+
+main{
+    width: 80%;
+    margin:auto;
+}
+
+#Info{
+    width: 100%;
+    height:2px;
+    display:block;
+}
+
+.Info{
+    display:flex;
+    border:2px solid #003300;
+    margin:100px 0;
+    padding:20px;
+
+}
+.Info article{
+    flex: 1;
+    text-align: center;
+}
+.Info article h2{
+    color:#003300;
+    
+}
+.Info article ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.Info article ul li {
+    margin-bottom: 3%;
+    font-size:1vw;
+}
+
+.Info .ProfilePic {
+    flex: 1;
+    border-left: 2px solid #003300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Info .ProfilePic img{
+    width:50%;
+    min-height:330px;
+    display:block;
+    margin:auto;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #003300;
+    font-family: 'Montserrat', sans-serif;
+}
+footer .FooterContent{
+    width: 768px;
+    border:1px solid red;
+    margin:auto;
+    display:flex;
+}
+
+.FooterLogo{
+    width:100%;
+}
+footer .LogoBox {
+    flex: 1;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+footer .LogoBox #FooterLogo {
+    width: 180px;
+    margin: 5px auto;
+    display: block;
+    transition: 0.2s margin, 0.2s width;
+}
+footer .LogoBox #FooterLogo:hover{
+    width: 200px;
+    margin:0px auto;
+}
+footer .ListBox ul{
+    list-style-type:none;
+    padding:0;
+}
+footer .ListBox ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .ListBox ul li a {
+    color:white;
+    text-decoration:none;
+    transition:0.2s color;
+}
+footer .ListBox ul li a:hover{
+    color:#009900;
+}
+footer .ListBox {
+    flex: 1;
+    padding: 0 20px;
+}
+footer #FooterLeft{
+    text-align:right;
+}
+footer #FooterRight{
+    text-align: left;
+}
+footer .FooterSocialMedia {
+  
+    width: 150px;
+    margin:auto;
+    display:flex;
+}
+footer .FooterSocialMedia a {
+    height: 50px;
+    margin: 18px auto;
+}
+#InstagramLogo {
+    content: url("instagramwhite.png");
+    width: 50px;
+    display: block;
+}
+#InstagramLogo:hover {
+    content:url("instagramgreen.png");
+}
+#DiagonalLine {
+    width: 30px;
+    margin: 0 10px;
+    display: block;
+}
+#FacebookLogo {
+    content: url("facebookwhite.png");
+    width: 50px;
+    display: block;
+}
+#FacebookLogo:hover {
+    content: url("facebookgreen.png");
+}
+#FooterLeftPhone{
+    display:none;
+}
