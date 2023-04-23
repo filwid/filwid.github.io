@@ -15,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="ShowResults() ">
+<body onload="ShowResults()">
 
     <nav class="Overlay" id="PhoneNav">
 
@@ -25,7 +25,6 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="video.html">Video</a>
-            <a href="schedule.html">Schedule</a>
             <a href="results.html">Results</a>
             <a href="statistics.html">Statistics</a>
         </div>
@@ -46,7 +45,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="video.html">Video</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="results.html">Results</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
             </ul>
@@ -61,840 +59,424 @@
     </div>
 
 
-    <main id="ResultsMain">
+    <main>
 
+        <h1>Results</h1>
+
+        <p><b>These are my results from 2019 and onwards</b></p>
+       
+        <hr />
 
         <div class="Results">
             <div class="ResultsButtonpanel">
-                <div id="ResultsButton2022" class="ResultsButton" onclick="ContentChange(2022)" >2022</div>
-                <div id="ResultsButton2021" class="ResultsButton" onclick="ContentChange(2021)" >2021</div>
-                <div id="ResultsButton2020" class="ResultsButton" onclick="ContentChange(2020)" >2020</div>
-                <div id="ResultsButton2019" class="ResultsButton" onclick="ContentChange(2019)" >2019</div>
+                <div class="ResultsButton" id="ResultsButton2022" onclick="ChangeContent(2022)">2022</div>
+                <div class="ResultsButton" id="ResultsButton2021" onclick="ChangeContent(2021)">2021</div>
+                <div class="ResultsButton" id="ResultsButton2020" onclick="ChangeContent(2020)">2020</div>
+                <div class="ResultsButton" id="ResultsButton2019" onclick="ChangeContent(2019)">2019</div>
             </div>
 
-            <div id="Results2022" class="ResultsContent">
+            <div class="ResultsContent" id="Results2022">
+                <!--Byt så att alla har class tournament i länken istället för i en div-->
 
-                <div class="ResultBoard">
-                    <h1>Gullbringa Open</h1>
+                    <a href="https://www.orestadsgk.com/" target="new" class="Tournament">
+                        
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>24th Apr</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Gullbringa GGCC, par 70</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5070m</h2>
-                        </div>
-                    </div>
+                            <div class="TournamentPicture">
+                                <img src="img/courses/orestads.jpg" alt="Orestads GC">
+                            </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>73 - 75 (+8)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>3</h2>
-                        </div>
-                    </div>
-                </div>
+                            <div class="TournamentInfo">
+                                <h2>Norberg Open</h2>
 
-                <div class="ResultBoard ResultBoardGreen">
+                                <p>Apr 18</p>
 
-                    <h1>Norberg Open</h1>
+                                <p>Orestads GC</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>18th Apr</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Orestads GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>6020m</h2>
-                        </div>
-                    </div>
+                                <p>Result: 74 - 81 (+13) | T32</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>74 - 81 (+13)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T32</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+                            </div>
+                    </a>
 
-            <div id="Results2021" class="ResultsContent">
+                    <a href="http://www.gullbringagolf.se/" target="new" class="Tournament">
+
+                            <div class="TournamentPicture">
+                                <img src="img/courses/gullbringa.jpg" alt="Gullbinga GGCC">
+                            </div>
+
+                            <div class="TournamentInfo">
+                                <h2>Gullbringa Open</h2>
+
+                                <p>Apr 24</p>
+
+                                <p>Gullbringa GGCC</p>
+
+                                <p>Result: 73 - 75 (+8) | 3rd</p>
+
+                            </div>
+                    </a>
 
 
-                <div class="ResultBoard">
-                    <h1>Swedish Golf Team Invitation</h1>
+                    <a href="https://www.varbergsgk.se/west/" target="new" class="Tournament">
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>9th Oct - 10th Oct</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Osterlen GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>6324m</h2>
-                        </div>
-                    </div>
+                            <div class="TournamentPicture">
+                                <img src="img/courses/varberg.jpg" alt="Varberg GC">
+                            </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>79 - 78 - 76 (+20)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T24</h2>
-                        </div>
-                    </div>
-                </div>
+                            <div class="TournamentInfo">
+                                <h2>Teen Tour Elite #1</h2>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Elite #6</h1>
+                                <p>May 14-16</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>10th Sep - 12th Sep</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Landeryds GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>6146m</h2>
-                        </div>
-                    </div>
+                                <p>Varberg GC, West Course</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>75 - 73 - 74 (+6)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>36</h2>
-                        </div>
-                    </div>
-                </div>
+                                <p>Result: --</p>
 
-                <div class="ResultBoard">
-                    <h1>Dynekilens Junior Open</h1>
+                            </div>
+                    </a>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>29th Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Dynekilens GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5237m</h2>
-                        </div>
-                    </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>72 - 71 (+1)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T3</h2>
-                        </div>
-                    </div>
-                </div>
+                    <a href="https://www.hillsgolfclub.se/" target="new" class="Tournament">
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #5</h1>
+                            <div class="TournamentPicture">
+                                <img src="img/courses/hills.jpg" alt="Hills GC">
+                            </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>21st Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Forsgardens GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5799m</h2>
-                        </div>
-                    </div>
+                            <div class="TournamentInfo">
+                                <h2>Goteborgsserien</h2>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>72 - 67 (-5)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>1</h2>
-                        </div>
-                    </div>
-                </div>
+                                <p>May 29</p>
 
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg, Final</h1>
+                                <p>Hills Golf &amp; Sports Club</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>4th Aug - 5th Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Hills GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5408m</h2>
-                        </div>
-                    </div>
+                                <p>Result: --</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>69 - 69 (-4)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>1</h2>
-                        </div>
-                    </div>
-                </div>
+                            </div>
+                    </a>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #4</h1>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>31st Jul - 1st Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>S:t Jorgen Park GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5651m</h2>
-                        </div>
-                    </div>
+                    <a href="https://www.albatrossgolfklubb.se/" target="new" class="Tournament">
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>77 - 75 - 74 (+10)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T14</h2>
-                        </div>
-                    </div>
-                </div>
+                            <div class="TournamentPicture">
+                                <img src="img/courses/albatross.png" alt="Albatross GC">
+                            </div>
 
-                <div class="ResultBoard">
-                    <h1>Teen Tour Future #3</h1>
+                            <div class="TournamentInfo">
+                                <h2>Teen Tour Elite #2</h2>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>19th Jun - 20th Jun</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Chalmers GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5564m</h2>
-                        </div>
-                    </div>
+                                <p>Jun 3-5</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>73 - 74 - 76 (+10)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>11</h2>
-                        </div>
-                    </div>
-                </div>
+                                <p>Albatross GC</p>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Slaget om Goteborg #4</h1>
+                                <p>Result: --</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>12th Jun</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Grappas GC, par 70</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5585m</h2>
-                        </div>
-                    </div>
+                            </div>
+                    </a>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>75 - 72 (+7)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>5</h2>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg #3</h1>
+                    <a href="https://www.landerydsgolf.se/" target="new" class="Tournament">
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>6th Jun</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Kungalv-Kode GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5634m</h2>
-                        </div>
-                    </div>
+                            <div class="TournamentPicture">
+                                <img src="img/courses/landeryd.jpg" alt="Landeryds GC">
+                            </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>78 - 77 (+11)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>7</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="TournamentInfo">
+                                <h2>Swedish Junior Strokeplay Championship</h2>
 
-            <div id="Results2020" class="ResultsContent">
-                <div class="ResultBoard">
-                    <h1>Gullbringa Open</h1>
+                                <p>Jun 18-21</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>10th Sep</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Gullbringa GC, par 69</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5171m</h2>
-                        </div>
-                    </div>
+                                <p>Landeryds GC</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>76-73 (+11)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T20</h2>
-                        </div>
-                    </div>
-                </div>
+                                <p>Result: --</p>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #6</h1>
+                            </div>
+                    </a>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>13th Sep</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Lerjedalens GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5780m</h2>
-                        </div>
-                    </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>84 (+12)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T30</h2>
-                        </div>
-                    </div>
-                </div>
+                    <a href="https://www.alegk.se/" target="new" class="Tournament">
 
-                <div class="ResultBoard">
-                    <h1>Dynekilens Junior Open</h1>
+                            <div class="TournamentPicture">
+                                <img src="img/courses/ale.jpg" alt="Ale GC">
+                            </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>29th Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Dynekilens GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5237m</h2>
-                        </div>
-                    </div>
+                            <div class="TournamentInfo">
+                                <h2>District Junior Club Championship</h2>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>77 - 72 (+7)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T6</h2>
-                        </div>
-                    </div>
-                </div>
+                                <p>Jun 22-23</p>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #5</h1>
+                                <p>Ale GC</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>23rd Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Ale GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5865m</h2>
-                        </div>
-                    </div>
+                                <p>Result: --</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>71 - 81 (+8)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T9</h2>
-                        </div>
-                    </div>
-                </div>
+                            </div>
+                    </a>
 
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg #6</h1>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>5th Aug- 6th Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Lycke GCC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5657m</h2>
-                        </div>
-                    </div>
+                    <a href="http://kkgk.se/" target="new" class="Tournament">
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>74 - 77 (+9)</h2>
+                        <div class="TournamentPicture">
+                            <img src="img/courses/kungalv.jpg" alt="Kungalv Kode GC">
                         </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T3</h2>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #4</h1>
+                        <div class="TournamentInfo">
+                            <h2>Goteborgsserien</h2>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>1st Aug - 2nd Aug</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Goteborgs GC, par 70</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5248m</h2>
-                        </div>
-                    </div>
+                            <p>Jun 26</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>74 - 74 - 75 (+13)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>40</h2>
-                        </div>
-                    </div>
-                </div>
+                            <p>Kungaelv Kode GC</p>
 
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg #3</h1>
+                            <p>Result: --</p>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>10th Jul</h2>
                         </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Delsjo GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5607m</h2>
-                        </div>
-                    </div>
+                    </a>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>72 - 78 (+8)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T9</h2>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Slaget om Goteborg #5</h1>
+                    <a href="https://pgaswedennational.se/" target="new" class="Tournament">
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>2nd Jul</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Chalmers GC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5564m</h2>
-                        </div>
-                    </div>
 
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>75 - 76 (+7)</h2>
+                        <div class="TournamentPicture">
+                            <img src="img/courses/pganational.jpeg" alt="PGA Sweden National">
                         </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T2</h2>
+
+                        <div class="TournamentInfo">
+                            <h2>Stenson Sunneson Junior Challenge</h2>
+
+                            <p>Jun 28-30</p>
+
+                            <p>PGA Sweden National</p>
+
+                            <p>Result: --</p>
+
                         </div>
-                    </div>
+                    </a>
+
+
+                    <a href="https://www.chgk.se/" target="new" class="Tournament">
+
+                            <div class="TournamentPicture">
+                                <img src="img/courses/chalmers.jpg" alt="Chalmers GC">
+                            </div>
+
+                            <div class="TournamentInfo">
+                                <h2>Goteborgsserien</h2>
+
+                                <p>Jul 3</p>
+
+                                <p>Chalmers GC</p>
+
+                                <p>Result: --</p>
+
+                            </div>
+                    </a>
+
+
+                    <a href="https://www.rigk.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/ringenas.jpg" alt="Ringenas GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Ringenäs JMI Sponsored by FJ &amp; Titleist</h2>
+
+                            <p>Jul 5-6</p>
+
+                            <p>Ringenaes GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="http://www.gullbringagolf.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/gullbringa.jpg" alt="Gullbringa GGCC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Carin Hjalmarsson Junior Open</h2>
+
+                            <p>Jul 10</p>
+
+                            <p>Gullbringa GGCC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="http://www.onsjogk.com/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/onsjo.jpg" alt="Onsjo GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>National Club Championship</h2>
+
+                            <p>Jul 14-16</p>
+
+                            <p>Onsjo GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.forsgarden.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/forsgarden.jpg" alt="Forsgarden GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Junior Team Championship</h2>
+
+                            <p>Jul 19-20</p>
+
+                            <p>Forsgardens GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.viksjogk.se/" target="new" class="Tournament">
+
+                            <div class="TournamentPicture">
+                                <img src="img/courses/viksjo.jpg" alt="Viksjo GC">
+                            </div>
+
+                            <div class="TournamentInfo">
+                                <h2>Swedish Junior Matchplay Championship</h2>
+
+                                <p>Jul 28-31</p>
+
+                                <p>Viksjo GC</p>
+
+                                <p>Result: --</p>
+
+                            </div>
+                    </a>
+
+
+                    <a href="http://www.degk.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/delsjo.jpg" alt="Delsjo GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Delsjo Junior Open</h2>
+
+                            <p>Aug 2-3</p>
+
+                            <p>Delsjö GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="https://oijared.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/oijared.jpg" alt="Oijared Resort">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Junior District Championship</h2>
+
+                            <p>Aug 4-5</p>
+
+                            <p>Oijared Resort</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.hgk.s" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/halmstad.jpg" alt="Halmstad GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Tylosand Junior Open</h2>
+
+                            <p>Aug 8</p>
+
+                            <p>Halmstad GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+                    <a href="https://upsalagk.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/upsala.jpg" alt="Upsala GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Teen Tour Elite #5</h2>
+
+                            <p>Aug 19-21</p>
+
+                            <p>Upsala GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+           
+                    </a>
+
+
+                    <a href="https://arjangsgk.se/" target="new" class="Tournament">
+
+                        <div class="TournamentPicture">
+                            <img src="img/courses/arjaeng.jpg" alt="Arjaeng GC">
+                        </div>
+
+                        <div class="TournamentInfo">
+                            <h2>Teen Tour Elite #6</h2>
+
+                            <p>Sep 10-12</p>
+
+                            <p>Arjaeng GC</p>
+
+                            <p>Result: --</p>
+
+                        </div>
+                    </a>
+
+
+
+
+
                 </div>
             </div>
 
-            <div id="Results2019" class="ResultsContent">
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg Final</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>5th Oct - 6th Oct</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Lycke GCC, par 71</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5657m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>86 - 80 (+24)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>19</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Hofgards Junior Open</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>22nd Sep</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Hofgards GC, par 70</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5150m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>81 - 81 (+22)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T39</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard">
-                    <h1>Teen Tour Future #6</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>8th Sep</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Sjogarde GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5770m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>74 - 79 (+9)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T21</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #2</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>8th Jun</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Ale GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5865m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>81 - 81 (+18)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>26</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg #3</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>10th Jul</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Sjogarde GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5770m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>82 - 84 (+24)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T19</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Teen Tour Future #1</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>19th May</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Grappas GC, par 70</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5585m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>75 - 79 (+14)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T19</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard">
-                    <h1>Slaget om Goteborg #2</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>11th May</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Goteborgs GC, par 70</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5248m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>80 - 81 (+21)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T11</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ResultBoard ResultBoardGreen">
-                    <h1>Slaget om Goteborg #1</h1>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Date</h2>
-                            <h2>28th Apr</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Course</h2>
-                            <h2>Ale GC, par 72</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Length</h2>
-                            <h2>5865m</h2>
-                        </div>
-                    </div>
-
-                    <div class="ResultsPanel">
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Score</h2>
-                            <h2>79 - 81 (+16)</h2>
-                        </div>
-                        <div class="ResultsStat">
-                            <h2 class="ResultsTitle">Position</h2>
-                            <h2>T12</h2>
-                        </div>
-                    </div>
-                </div>
+            <div class="ResultsContent" id="Results2021">
+                2021
             </div>
 
+            <div class="ResultsContent" id="Results2020">
+                2020
+            </div>
+
+            <div class="ResultsContent" id="Results2019">
+                2019
+            </div>
 
     </main>
 

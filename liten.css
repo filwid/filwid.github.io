@@ -95,7 +95,7 @@ header nav {
     width: 100%;
     height: 80vh;
     padding-top: 20vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("img/temp.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("img/HomepageCourse.jpg");
     background-size: cover;
 }
 
@@ -293,61 +293,6 @@ main {
     letter-spacing: 4px;
 }
 
-#ResultsMain {
-    width: 100%;
-    padding: 0;
-}
-
-.Results .ResultsButtonpanel {
-    display: flex;
-}
-
-.Results .ResultsButtonpanel .ResultsButton {
-    flex: 1;
-    background-color: #003300;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.ResultsContent .ResultBoard {
-    width: 100%;
-    padding: 50px 0;
-}
-
-.ResultBoardGreen {
-    background-color: #cfffcf
-}
-
-.ResultBoard h1 {
-    text-align: center;
-    padding: 30px 0;
-    margin: 0;
-}
-
-.ResultsPanel {
-    display: block;
-}
-
-.ResultsStat {
-    flex: 1;
-    text-align: center;
-}
-
-.ResultsStat h2 {
-    margin: 0;
-    font-size:18px;
-    padding: 16px 0;
-}
-
-.ResultsStat .ResultsTitle {
-    background-color: #003300;
-    color: white;
-}
 
 .TopRowSliderStats {
     margin-top: 20px;

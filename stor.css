@@ -91,7 +91,7 @@ header nav ul li a:hover {
     width: 100%;
     height: 70vh;
     padding-top: 30vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("img/temp.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("img/HomepageCourse.jpg");
     background-size: cover;
 }
 
@@ -162,6 +162,14 @@ header nav ul li a:hover {
     max-height:175px;
 }
 
+
+.HeroImageLicensingRights {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+}
 
 
 .HeroImage .HeroButton:hover {
@@ -309,56 +317,52 @@ main {
     letter-spacing:6px;
 }
 
-#ResultsMain {
+
+.ResultsButtonpanel{
+    display:flex;
+}
+.ResultsButton {
+    font-size: 34px;
+    margin-right: 45px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.ResultsContent {
     width: 100%;
-    padding: 0;
+    display: grid;
+    padding-top:50px;
+    grid-template-columns: auto auto auto;
+}
+.ResultsContent a {
+    text-decoration: none;
+    color: black;
 }
 
-.Results .ResultsButtonpanel{
-    display:flex;
-}
-.Results .ResultsButtonpanel .ResultsButton{
-    flex:1;
-    background-color:#003300;
-    text-align:center;
-    height:70px;
-    line-height:70px;
-    font-size:30px;
-    color:white;
-    font-weight:bold;
-    cursor:pointer;
+.Tournament {
+    border: 1px solid #003300;
+    font-size: 14px;
+    transition:0.3s;
+    margin:20px;
+    display:block;
 }
 
-.ResultsContent .ResultBoard{
-    width: 90%;
-    padding:0 5% 100px;
-
+.TournamentPicture {
+    width: 100%;
 }
-.ResultBoardGreen{
-    background-color:#cfffcf
+.TournamentPicture img {
+    width: 100%;
+    height: 200px;
 }
-.ResultBoard h1{
-    text-align:center;
-    padding:50px 0;
-    margin:0;
+.TournamentInfo {
+    box-sizing: border-box;
+    padding: 10px;
 }
-
-.ResultsPanel{
-    display:flex;
-    margin-bottom:40px;
+.Tournament h2 {
+    font-size: 14px;
 }
-.ResultsStat{
-    flex:1;
-    text-align:center;
-}
-.ResultsStat h2 {
-    margin: 0;
-    padding: 20px 0;
-}
-.ResultsStat .ResultsTitle{
-    background-color:#003300;
-    color:white;
-    
+.Tournament p {
+    margin-top: 30px;
 }
 
 .TopRowSliderStats{
@@ -552,29 +556,6 @@ hr{
 .Schedule a {
     text-decoration:none;
     color:black;
-}
-.Tournament {
-    border: 1px solid #003300;
-    margin: 20px;
-    font-size: 16px;
-}
-.Tournament h2{
-    font-size:16px;
-}
-.Tournament p {
-    margin-top: 30px;
-}
-.TournamentPicture {
-    width: 100%;
-}
-
-.TournamentPicture img {
-    width: 100%;
-    height: 200px;
-}
-.TournamentInfo{
-    box-sizing:border-box;
-    padding: 10px;
 }
 
 footer {
